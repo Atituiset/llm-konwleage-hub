@@ -117,10 +117,10 @@ graph LR
     D --> D1[y₃]
     E --> E1[y₄]
 
-    style B fill:#3498db
-    style C fill:#3498db
-    style D fill:#3498db
-    style E fill:#3498db
+    style B fill:#3498db,color:#fff
+    style C fill:#3498db,color:#fff
+    style D fill:#3498db,color:#fff
+    style E fill:#3498db,color:#fff
 ```
 
 **公式**：

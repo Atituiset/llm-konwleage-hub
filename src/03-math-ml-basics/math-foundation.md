@@ -25,10 +25,10 @@ graph LR
     IT -->|交叉熵损失| LLM7[预训练目标]
     IT -->|KL 散度| LLM8[知识蒸馏]
 
-    style LA fill:#e3f2fd,stroke:#1565c0
-    style CAL fill:#fff3e0,stroke:#ef6c00
-    style PROB fill:#f3e5f5,stroke:#6a1b9a
-    style IT fill:#e8f5e9,stroke:#2e7d32
+    style LA fill:#e3f2fd,stroke:#1565c0,color:#000
+    style CAL fill:#fff3e0,stroke:#ef6c00,color:#000
+    style PROB fill:#f3e5f5,stroke:#6a1b9a,color:#000
+    style IT fill:#e8f5e9,stroke:#2e7d32,color:#000
 ```
 
 ---
@@ -63,9 +63,9 @@ graph LR
     E1 ---|点积低| E3
     E2 ---|点积低| E3
 
-    style E1 fill:#e3f2fd,stroke:#1565c0
-    style E2 fill:#e3f2fd,stroke:#1565c0
-    style E3 fill:#fff3e0,stroke:#ef6c00
+    style E1 fill:#e3f2fd,stroke:#1565c0,color:#000
+    style E2 fill:#e3f2fd,stroke:#1565c0,color:#000
+    style E3 fill:#fff3e0,stroke:#ef6c00,color:#000
 ```
 
 ### 1.2 矩阵与矩阵运算
@@ -133,8 +133,8 @@ graph TD
     C --> D[$W \approx U_r \Sigma_r V_r^T$]
     D --> E[参数量从 $mn$ 降至 $r(m+n)$]
 
-    style A fill:#e3f2fd,stroke:#1565c0
-    style E fill:#e8f5e9,stroke:#2e7d32
+    style A fill:#e3f2fd,stroke:#1565c0,color:#000
+    style E fill:#e8f5e9,stroke:#2e7d32,color:#000
 ```
 
 ---
@@ -248,9 +248,9 @@ graph TD
         GH -->|"$\frac{\partial h}{\partial W_1}$"| GW1[$\frac{\partial L}{\partial W_1}$]
     end
 
-    style X fill:#e3f2fd,stroke:#1565c0
-    style L fill:#ffebee,stroke:#c62828
-    style GW1 fill:#e8f5e9,stroke:#2e7d32
+    style X fill:#e3f2fd,stroke:#1565c0,color:#000
+    style L fill:#ffebee,stroke:#c62828,color:#000
+    style GW1 fill:#e8f5e9,stroke:#2e7d32,color:#000
 ```
 
 **在 LLM 中的应用**：Transformer 有数十亿参数，反向传播通过计算图自动求导，高效计算所有参数的梯度。PyTorch/TensorFlow 等框架的核心就是自动微分引擎。
@@ -413,9 +413,9 @@ graph LR
         KL -->|学习软标签| S2[压缩后的小模型]
     end
 
-    style T fill:#e3f2fd,stroke:#1565c0
-    style S fill:#fff3e0,stroke:#ef6c00
-    style S2 fill:#e8f5e9,stroke:#2e7d32
+    style T fill:#e3f2fd,stroke:#1565c0,color:#000
+    style S fill:#fff3e0,stroke:#ef6c00,color:#000
+    style S2 fill:#e8f5e9,stroke:#2e7d32,color:#000
 ```
 
 ### 4.4 互信息（Mutual Information）
@@ -449,9 +449,9 @@ graph TD
     SS -->|"Softmax"| A[注意力权重 $A$]
     A -->|"加权求和"| O[输出 $O = AV$]
 
-    style X fill:#e3f2fd,stroke:#1565c0
-    style A fill:#fff3e0,stroke:#ef6c00
-    style O fill:#e8f5e9,stroke:#2e7d32
+    style X fill:#e3f2fd,stroke:#1565c0,color:#000
+    style A fill:#fff3e0,stroke:#ef6c00,color:#000
+    style O fill:#e8f5e9,stroke:#2e7d32,color:#000
 ```
 
 **数学公式**：

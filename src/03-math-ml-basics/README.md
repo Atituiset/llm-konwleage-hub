@@ -20,13 +20,13 @@ graph TD
     D --> I[信息论<br/>交叉熵、KL 散度]
     D --> J[统计学习理论<br/>泛化界、VC 维]
 
-    style A fill:#e1f5e1,stroke:#2e7d32,stroke-width:2px
-    style E fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    style F fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    style G fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    style H fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    style I fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    style J fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+    style A fill:#e1f5e1,stroke:#2e7d32,stroke-width:2px,color:#000
+    style E fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000
+    style F fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000
+    style G fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000
+    style H fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000
+    style I fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000
+    style J fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000
 ```
 
 理解数学能让你：
@@ -60,16 +60,16 @@ graph LR
     M4 --> A1
     A3 --> T1
 
-    style M1 fill:#e3f2fd,stroke:#1565c0
-    style M2 fill:#e3f2fd,stroke:#1565c0
-    style M3 fill:#e3f2fd,stroke:#1565c0
-    style M4 fill:#e3f2fd,stroke:#1565c0
-    style A1 fill:#f3e5f5,stroke:#6a1b9a
-    style A2 fill:#f3e5f5,stroke:#6a1b9a
-    style A3 fill:#f3e5f5,stroke:#6a1b9a
-    style T1 fill:#e8f5e9,stroke:#2e7d32
-    style T2 fill:#e8f5e9,stroke:#2e7d32
-    style T3 fill:#e8f5e9,stroke:#2e7d32
+    style M1 fill:#e3f2fd,stroke:#1565c0,color:#000
+    style M2 fill:#e3f2fd,stroke:#1565c0,color:#000
+    style M3 fill:#e3f2fd,stroke:#1565c0,color:#000
+    style M4 fill:#e3f2fd,stroke:#1565c0,color:#000
+    style A1 fill:#f3e5f5,stroke:#6a1b9a,color:#000
+    style A2 fill:#f3e5f5,stroke:#6a1b9a,color:#000
+    style A3 fill:#f3e5f5,stroke:#6a1b9a,color:#000
+    style T1 fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style T2 fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style T3 fill:#e8f5e9,stroke:#2e7d32,color:#000
 ```
 
 | 周次 | 主题 | 核心内容 | 与 LLM 的关联 |

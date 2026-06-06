@@ -38,8 +38,8 @@ graph LR
     E --> F
     F --> G[输出]
 
-    style C fill:#e74c3c
-    style D fill:#e74c3c
+    style C fill:#e74c3c,color:#fff
+    style D fill:#e74c3c,color:#fff
 ```
 
 **效果**：KV Cache 减少 93%，推理速度大幅提升，API 价格降至行业最低水平。
@@ -61,7 +61,7 @@ graph TB
     D --> E
     E --> F[输出]
 
-    style D fill:#3498db
+    style D fill:#3498db,color:#fff
 ```
 
 - **细粒度**：每个专家更小、更专精，256 个路由专家

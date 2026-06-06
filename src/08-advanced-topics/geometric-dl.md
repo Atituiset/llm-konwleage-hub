@@ -26,7 +26,7 @@ graph TB
     C --> C4[对称性 = 群论]
     C --> C5[GNN/谱方法]
 
-    style C fill:#3498db
+    style C fill:#3498db,color:#fff
 ```
 
 ---

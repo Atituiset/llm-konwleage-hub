@@ -27,7 +27,7 @@ graph TB
     D --> D2[分析差距]
     D --> D3[调整Prompt]
 
-    style A fill:#f39c12
+    style A fill:#f39c12,color:#fff
 ```
 
 ---
@@ -225,8 +225,8 @@ graph LR
     F --> B
     D -->|是| G[保存Prompt]
 
-    style E fill:#e74c3c
-    style G fill:#2ecc71
+    style E fill:#e74c3c,color:#fff
+    style G fill:#2ecc71,color:#fff
 ```
 
 **迭代维度**：

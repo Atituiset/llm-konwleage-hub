@@ -33,8 +33,8 @@ graph LR
     B --> C[隐藏层2]
     C --> D[输出层]
 
-    style A fill:#3498db
-    style D fill:#e74c3c
+    style A fill:#3498db,color:#fff
+    style D fill:#e74c3c,color:#fff
 ```
 
 **为什么需要多层？**
@@ -211,9 +211,9 @@ graph LR
     G --> H[BERT/GPT]
     H --> I[大模型时代]
 
-    style G fill:#3498db
-    style H fill:#e74c3c
-    style I fill:#2ecc71
+    style G fill:#3498db,color:#fff
+    style H fill:#e74c3c,color:#fff
+    style I fill:#2ecc71,color:#fff
 ```
 
 ### 关键里程碑

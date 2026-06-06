@@ -44,16 +44,17 @@ graph LR
     G --> H[第八阶段<br/>高级主题]
     H --> I[第九阶段<br/>竞赛实战]
 
-    style Z fill:#f3e5f5
-    style A fill:#e3f2fd
-    style B fill:#e3f2fd
-    style C fill:#e8f5e9
-    style D fill:#e8f5e9
-    style E fill:#e8f5e9
-    style F fill:#fff3e0
-    style G fill:#fff3e0
-    style H fill:#fce4ec
-    style I fill:#fce4ec
+    classDef s0 fill:#5e35b1,stroke:#ba68c8,color:#fff
+    classDef s1 fill:#1565c0,stroke:#64b5f6,color:#fff
+    classDef s2 fill:#2e7d32,stroke:#81c784,color:#fff
+    classDef s3 fill:#ef6c00,stroke:#ffb74d,color:#fff
+    classDef s4 fill:#c62828,stroke:#e57373,color:#fff
+
+    class Z s0
+    class A,B s1
+    class C,D,E s2
+    class F,G s3
+    class H,I s4
 ```
 
 | 阶段 | 主题 | 目标 | 预计时间 |
