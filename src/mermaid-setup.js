@@ -22,45 +22,106 @@
             if (typeof mermaid !== 'undefined') {
                 mermaid.initialize({
                     startOnLoad: false,
-                    theme: 'dark',
+                    theme: 'base',
                     securityLevel: 'loose',
                     themeVariables: {
-                        primaryColor: '#34495e',
+                        // 主节点：亮蓝底 + 白字，确保在 navy 深色背景上醒目
+                        primaryColor: '#2980b9',
                         primaryTextColor: '#ffffff',
                         primaryBorderColor: '#5dade2',
-                        lineColor: '#aeb6bf',
-                        secondaryColor: '#2c3e50',
-                        tertiaryColor: '#1a252f',
+
+                        // 次要节点
+                        secondaryColor: '#27ae60',
+                        secondaryTextColor: '#ffffff',
+                        secondaryBorderColor: '#58d68d',
+
+                        // 第三级节点
+                        tertiaryColor: '#8e44ad',
+                        tertiaryTextColor: '#ffffff',
+                        tertiaryBorderColor: '#af7ac5',
+
+                        // 线条：亮白色，确保清晰可见
+                        lineColor: '#ffffff',
+
+                        // 文本和标签
+                        textColor: '#ffffff',
                         fontFamily: 'Segoe UI, Roboto, Helvetica, Arial, sans-serif',
-                        fontSize: '16px'
+                        fontSize: '18px',
+
+                        // 背景
+                        background: '#1a2332',
+                        mainBkg: '#2c3e50',
+                        secondBkg: '#34495e',
+                        tertiaryBkg: '#1a252f',
+
+                        // 特殊元素
+                        primaryBorderColor: '#5dade2',
+                        edgeLabelBackground: '#1a2332',
+                        nodeTextColor: '#ffffff',
+                        clusterBkg: '#243447',
+                        clusterBorder: '#3498db',
+                        titleColor: '#ffffff',
+                        edgeLabelText: '#ffffff',
+                        activeTaskBkgColor: '#2980b9',
+                        activeTaskBorderColor: '#5dade2',
+                        gridColor: '#34495e',
+                        section0: '#2980b9',
+                        section1: '#27ae60',
+                        section2: '#8e44ad',
+                        section3: '#c0392b',
+                        task0: '#2980b9',
+                        task1: '#27ae60',
+                        task2: '#8e44ad',
+                        task3: '#c0392b',
+                        todayLineColor: '#e74c3c',
+                        git0: '#2980b9',
+                        git1: '#27ae60',
+                        git2: '#8e44ad',
+                        git3: '#c0392b',
+                        gitBranchLabel0: '#ffffff',
+                        gitBranchLabel1: '#ffffff',
+                        gitBranchLabel2: '#ffffff',
+                        gitBranchLabel3: '#ffffff',
+                        commitLabelColor: '#ffffff',
+                        commitLabelBackground: '#2c3e50',
+                        tagLabelColor: '#ffffff',
+                        tagLabelBackground: '#8e44ad',
+                        gitInv0: '#34495e',
+                        gitInv1: '#2c3e50',
+                        gitInv2: '#1a252f',
+                        gitInv3: '#243447'
                     },
                     flowchart: {
-                        useMaxWidth: false,
+                        useMaxWidth: true,
                         htmlLabels: true,
-                        curve: 'basis'
+                        curve: 'basis',
+                        padding: 15
                     },
                     sequence: {
-                        useMaxWidth: false,
+                        useMaxWidth: true,
                         diagramMarginX: 30,
-                        diagramMarginY: 30
+                        diagramMarginY: 30,
+                        actorFontSize: 18,
+                        noteFontSize: 16,
+                        messageFontSize: 16
                     },
                     gantt: {
-                        useMaxWidth: false
+                        useMaxWidth: true
                     },
                     mindmap: {
-                        useMaxWidth: false
+                        useMaxWidth: true
                     },
                     timeline: {
-                        useMaxWidth: false
+                        useMaxWidth: true
                     },
                     er: {
-                        useMaxWidth: false
+                        useMaxWidth: true
                     },
                     journey: {
-                        useMaxWidth: false
+                        useMaxWidth: true
                     },
                     gitgraph: {
-                        useMaxWidth: false
+                        useMaxWidth: true
                     }
                 });
                 mermaidReady = true;
@@ -102,7 +163,6 @@
 
         if (hasNew) {
             try {
-                // mermaid.init() works in both v9 and v10
                 mermaid.init(undefined, document.querySelectorAll('.mermaid'));
             } catch (err) {
                 console.error('[Mermaid] init() error:', err);
