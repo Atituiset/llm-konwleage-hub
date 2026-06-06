@@ -1,0 +1,26 @@
+[book]
+title = "大模型知识体系 - 从入门到精通"
+authors = ["LLM学习小组"]
+description = "系统性大模型学习资料整理，涵盖通识、应用、原理与工程部署"
+language = "zh"
+src = "src"
+
+[build]
+build-dir = "book"
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+mathjax-support = true
+additional-css = ["src/custom.css"]
+additional-js = ["src/mermaid-setup.js"]
+no-section-label = false
+
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = true
+boost-hierarchy = 2
+boost-paragraph = 1
+boost-title = 2

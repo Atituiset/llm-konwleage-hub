@@ -1,0 +1,27 @@
+# mdbook build output
+book/
+
+# extracted raw materials (not part of the book)
+extracted/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Node
+node_modules/
+
+# Logs
+*.log
