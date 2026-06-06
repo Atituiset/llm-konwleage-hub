@@ -28,6 +28,44 @@ pre[data-mermaid-rendered="true"] {
     display: none !important;
 }
 
+/* Mermaid 图表容器 */
+div.mermaid {
+    text-align: center;
+    margin: 20px 0;
+    overflow-x: auto;
+    padding: 10px;
+    background: #1e2a3a;
+    border-radius: 8px;
+    border: 1px solid #34495e;
+}
+
+/* Mermaid SVG 样式 */
+div.mermaid svg {
+    max-width: none;
+    height: auto;
+    display: inline-block;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* 防止 Mermaid 文本被 mdbook 全局样式覆盖 */
+div.mermaid .node rect,
+div.mermaid .node circle,
+div.mermaid .node ellipse,
+div.mermaid .node polygon,
+div.mermaid .node path {
+    stroke-width: 2px;
+}
+
+div.mermaid .edgeLabel {
+    background-color: #1e2a3a !important;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+div.mermaid .label {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
 /* 搜索框样式 */
 #searchbar {
     border-radius: 8px;

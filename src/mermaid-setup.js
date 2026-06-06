@@ -25,33 +25,42 @@
                     theme: 'dark',
                     securityLevel: 'loose',
                     themeVariables: {
-                        primaryColor: '#2c3e50',
-                        primaryTextColor: '#ecf0f1',
-                        primaryBorderColor: '#3498db',
-                        lineColor: '#bdc3c7',
-                        secondaryColor: '#34495e',
+                        primaryColor: '#34495e',
+                        primaryTextColor: '#ffffff',
+                        primaryBorderColor: '#5dade2',
+                        lineColor: '#aeb6bf',
+                        secondaryColor: '#2c3e50',
                         tertiaryColor: '#1a252f',
                         fontFamily: 'Segoe UI, Roboto, Helvetica, Arial, sans-serif',
-                        fontSize: '14px'
+                        fontSize: '16px'
                     },
                     flowchart: {
-                        useMaxWidth: true,
+                        useMaxWidth: false,
                         htmlLabels: true,
                         curve: 'basis'
                     },
                     sequence: {
-                        useMaxWidth: true,
-                        diagramMarginX: 20,
-                        diagramMarginY: 20
+                        useMaxWidth: false,
+                        diagramMarginX: 30,
+                        diagramMarginY: 30
                     },
                     gantt: {
-                        useMaxWidth: true
+                        useMaxWidth: false
                     },
                     mindmap: {
-                        useMaxWidth: true
+                        useMaxWidth: false
                     },
                     timeline: {
-                        useMaxWidth: true
+                        useMaxWidth: false
+                    },
+                    er: {
+                        useMaxWidth: false
+                    },
+                    journey: {
+                        useMaxWidth: false
+                    },
+                    gitgraph: {
+                        useMaxWidth: false
                     }
                 });
                 mermaidReady = true;
