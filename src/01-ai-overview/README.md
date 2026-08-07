@@ -79,10 +79,10 @@ graph TD
     D --> D3[Claude 系列]
     D --> D4[文心一言/通义千问]
 
-    style A fill:#e1f5fe,color:#000
-    style B fill:#fff3e0,color:#000
-    style C fill:#f3e5f5,color:#000
-    style D fill:#e8f5e9,color:#000
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#f3e5f5
+    style D fill:#e8f5e9
 ```
 
 | 层次 | 定义 | 核心思想 | 代表技术/产品 |
@@ -190,7 +190,7 @@ graph LR
     F --> G[拼接输出]
     G --> H[完整回复]
     
-    style D fill:#e8f5e9,color:#000
+    style D fill:#e8f5e9
 ```
 
 ### 3.2 大模型的核心能力
@@ -253,10 +253,10 @@ graph LR
     C --> C1[掌握国产大模型<br/>实际使用]
     D --> D1[了解行业格局<br/>未来趋势]
     
-    style A fill:#d4edda,color:#000
-    style B fill:#d1ecf1,color:#000
-    style C fill:#fff3cd,color:#000
-    style D fill:#f3e5f5,color:#000
+    style A fill:#d4edda
+    style B fill:#d1ecf1
+    style C fill:#fff3cd
+    style D fill:#f3e5f5
 ```
 
 ### 4.2 完整学习路线图
@@ -290,13 +290,13 @@ graph TD
     S5 --> S7
     S6 --> S7
     
-    style S1 fill:#e8f5e9,color:#000
-    style S2 fill:#fff3e0,color:#000
-    style S3 fill:#fff3e0,color:#000
-    style S4 fill:#e3f2fd,color:#000
-    style S5 fill:#e3f2fd,color:#000
-    style S6 fill:#f3e5f5,color:#000
-    style S7 fill:#f3e5f5,color:#000
+    style S1 fill:#e8f5e9
+    style S2 fill:#fff3e0
+    style S3 fill:#fff3e0
+    style S4 fill:#e3f2fd
+    style S5 fill:#e3f2fd
+    style S6 fill:#f3e5f5
+    style S7 fill:#f3e5f5
 ```
 
 ---

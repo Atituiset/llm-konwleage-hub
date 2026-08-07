@@ -250,6 +250,38 @@
         document.head.appendChild(script);
     }
 
+    function parseRgb(color) {
+        var m;
+        if ((m = /^#([0-9a-f]{3})$/i.exec(color))) {
+            return { r: parseInt(m[1][0] + m[1][0], 16), g: parseInt(m[1][1] + m[1][1], 16), b: parseInt(m[1][2] + m[1][2], 16) };
+        }
+        if ((m = /^#([0-9a-f]{6})$/i.exec(color))) {
+            return { r: parseInt(m[1].substr(0, 2), 16), g: parseInt(m[1].substr(2, 2), 16), b: parseInt(m[1].substr(4, 2), 16) };
+        }
+        if ((m = /^rgba?\((\d+),\s*(\d+),\s*(\d+)/.exec(color))) {
+            return { r: +m[1], g: +m[2], b: +m[3] };
+        }
+        return null;
+    }
+
+    // 全局控制：浅色填充节点自动改用深色文字，避免暗色主题下白字浅底
+    function applyNodeContrast() {
+        document.querySelectorAll('div.mermaid .node').forEach(function(node) {
+            var shape = node.querySelector('rect, circle, ellipse, polygon, path');
+            if (!shape) return;
+            var fill = shape.getAttribute('fill') || (shape.style && shape.style.fill);
+            if (!fill || fill === 'none' || fill === 'transparent') return;
+            var rgb = parseRgb(fill.trim());
+            if (!rgb) return;
+            var lin = function(c) { c /= 255; return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); };
+            var lum = 0.2126 * lin(rgb.r) + 0.7152 * lin(rgb.g) + 0.0722 * lin(rgb.b);
+            var label = node.querySelector('.label');
+            if (label && lum > 0.4) {
+                label.style.color = '#111827';
+            }
+        });
+    }
+
     function renderMermaidDiagrams() {
         if (!mermaidReady || typeof mermaid === 'undefined') {
             return;
@@ -279,7 +311,12 @@
 
         if (hasNew) {
             try {
-                mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+                var initResult = mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+                if (initResult && typeof initResult.then === 'function') {
+                    initResult.then(function() { applyNodeContrast(); });
+                } else {
+                    applyNodeContrast();
+                }
             } catch (err) {
                 console.error('[Mermaid] init() error:', err);
             }
