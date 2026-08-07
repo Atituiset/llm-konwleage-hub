@@ -338,19 +338,29 @@
         if (!contentArea) contentArea = document.querySelector('main');
         if (!contentArea) contentArea = document.body;
 
+        var renderTimer = null;
         var observer = new MutationObserver(function(mutations) {
-            var shouldRender = false;
-            mutations.forEach(function(mutation) {
-                if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
-                    shouldRender = true;
+            var needRender = false;
+            for (var i = 0; i < mutations.length && !needRender; i++) {
+                var mutation = mutations[i];
+                if (mutation.type !== 'childList' || !mutation.addedNodes.length) continue;
+                for (var j = 0; j < mutation.addedNodes.length && !needRender; j++) {
+                    var node = mutation.addedNodes[j];
+                    if (node.nodeType !== 1) continue;
+                    if ((node.querySelector && node.querySelector('pre code.language-mermaid')) ||
+                        (node.matches && node.matches('pre code.language-mermaid'))) {
+                        needRender = true;
+                    }
                 }
-            });
+            }
 
-            if (shouldRender) {
-                setTimeout(function() {
-                    resetRenderedState();
+            // 只渲染“新增且未渲染”的图表，不要重置已渲染图表：
+            // Mermaid 渲染自身会产生 DOM 变化，若每次都 reset+重渲染会形成无限循环。
+            if (needRender && !renderTimer) {
+                renderTimer = setTimeout(function() {
+                    renderTimer = null;
                     renderMermaidDiagrams();
-                }, 50);
+                }, 100);
             }
         });
 
