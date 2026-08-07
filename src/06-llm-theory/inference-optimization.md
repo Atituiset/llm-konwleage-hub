@@ -118,7 +118,7 @@ model.quantize(examples)  # 用校准数据量化
 model.save_quantized("Llama-2-7B-GPTQ")
 ```
 
-### 2.4 AWQ（Activation-aware Weight Quantization）（Activation-aware Weight Quantization）
+### 2.4 AWQ（Activation-aware Weight Quantization）
 
 **核心洞察**：不是所有权重通道对输出质量的影响都相同。保护"重要"通道可以显著提升量化质量。
 

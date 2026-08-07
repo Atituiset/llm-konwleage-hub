@@ -6,6 +6,7 @@
 
 # 第零阶段：环境准备
 
+- [第零阶段导学](00-getting-started/README.md)
 - [开发环境搭建指南](00-getting-started/environment-setup.md)
 
 # 第一阶段：AI 与大模型通识

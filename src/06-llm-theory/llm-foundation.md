@@ -48,7 +48,7 @@ graph TB
 
 Self-Attention 是 Transformer 的核心，它让序列中的每个位置都能关注到所有其他位置，从而捕捉长距离依赖。
 
-#### 1.2.1 完整数学推导（Complete Mathematical Derivation）（Complete Mathematical Derivation）
+#### 1.2.1 完整数学推导（Complete Mathematical Derivation）
 
 给定输入序列的嵌入矩阵（Embedding Matrix） $X \in \mathbb{R}^{n \times d}$，其中 $n$ 是序列长度（Sequence Length），$d$ 是嵌入维度：
 
