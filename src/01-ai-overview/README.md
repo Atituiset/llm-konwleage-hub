@@ -90,7 +90,7 @@ graph TD
 | **人工智能 (AI)** | 让机器模拟人类智能的广泛领域 | 符号推理、知识表示、学习 | 专家系统、搜索引擎、机器人 |
 | **机器学习 (ML)** | 让机器从数据中自动学习规律 | 用数据训练模型，而非硬编码规则 | 线性回归、决策树、SVM、随机森林 |
 | **深度学习 (DL)** | 基于多层神经网络的机器学习方法 | 自动学习数据的层次化特征表示 | CNN、RNN、Transformer、ResNet |
-| **大语言模型 (LLM)** | 基于 Transformer 的超大规模预训练语言模型 | 通过海量文本自监督学习语言规律 | GPT-4、DeepSeek-V3、Claude 3.5 |
+| **大语言模型 (LLM)** | 基于 Transformer 的超大规模预训练语言模型 | 通过海量文本自监督学习语言规律 | GPT-5、DeepSeek-V3.2、Claude 4.5 |
 
 ### 1.3 关键概念辨析
 
@@ -154,8 +154,9 @@ timeline
         2022 : ChatGPT 发布
              : 生成式 AI 元年
         2023 : GPT-4 / Claude / Llama
-        2024 : GPT-4o / o1 / DeepSeek-R1
-        2025 : Agent / 多模态 / 推理模型
+        2024 : GPT-4o / o1
+        2025 : DeepSeek-R1 / GPT-5 / Claude 4 / Gemini 3
+        2026 : Agent 与推理模型规模化落地
 ```
 
 ### 2.2 三次 AI 浪潮

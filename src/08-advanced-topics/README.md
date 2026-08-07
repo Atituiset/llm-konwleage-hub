@@ -92,14 +92,14 @@ graph LR
 
 | 方向 | 核心问题 | 代表工作 |
 |------|----------|----------|
-| **长上下文** | 如何高效处理100K+ tokens | Ring Attention, LongRoPE, YaRN |
-| **多模态** | 统一建模文本、图像、音频、视频 | GPT-4o, Gemini, Qwen2.5-VL |
-| **MoE** | 稀疏激活的大参数模型 | Mixtral, DeepSeek-V3, Qwen-MoE |
-| **世界模型** | AI理解物理世界 | Sora, Genie |
+| **长上下文** | 如何高效处理100K+ tokens | Ring Attention, LongRoPE, YaRN；Claude 4.x / Gemini 3 已商用 1M |
+| **多模态** | 统一建模文本、图像、音频、视频 | GPT-5, Gemini 3, Qwen3-VL |
+| **MoE** | 稀疏激活的大参数模型 | DeepSeek-V3.2, Qwen3, Grok 4 |
+| **世界模型** | AI理解物理世界 | Sora 2, Genie 3, Veo 3 |
 | **Agent** | 自主决策和行动 | ReAct, MCP, A2A |
 | **高效架构** | 替代Transformer | Mamba, TTT, Griffin |
 | **对齐** | 让模型更安全、更可控 | DPO, KTO, RLHF, Constitutional AI |
-| **推理增强** | 提升数学和逻辑推理 | CoT, ToT, o1/o3, DeepSeek-R1 |
+| **推理增强** | 提升数学和逻辑推理 | CoT, ToT, o3/o4-mini, DeepSeek-R1/R2, GPT-5 |
 
 ### 推荐阅读资源
 

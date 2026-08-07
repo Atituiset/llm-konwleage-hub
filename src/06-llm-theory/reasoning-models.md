@@ -355,7 +355,7 @@ DeepSeek 同时发布了两个模型：
 
 **API 使用方式**：
 ```python
-# o1 系列不支持 streaming 和 system prompt
+# 早期 o1（2024）不支持 streaming/system prompt；o3/GPT-5 已支持
 response = client.chat.completions.create(
     model="o1-mini",
     messages=[
@@ -392,7 +392,7 @@ DeepSeek-R1 是首个开源的顶级推理模型，其影响深远：
 # 蒸馏版 14B 可在单卡 RTX 4090 运行
 ollama run deepseek-r1:14b
 
-# 完整版 671B 需要 8xA100 或 4xH100
+# 完整版 671B（FP8 约 700GB）建议 8×H200 或 16×H100
 vllm serve deepseek-ai/DeepSeek-R1 \
   --tensor-parallel-size 8 \
   --max-model-len 32768
@@ -475,7 +475,7 @@ Google 在 Gemini 2.5 Flash 中加入了 "Thinking" 模式：
 
 ```
 当前状态：
-  顶级推理模型：671B 参数，需要 8xA100
+  顶级推理模型：671B 参数，FP8 权重约 700GB，需 8×H200
   只有少数公司能部署
 
 未来趋势：

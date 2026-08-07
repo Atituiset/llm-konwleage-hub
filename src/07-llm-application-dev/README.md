@@ -358,11 +358,11 @@ if response.choices[0].message.tool_calls:
 
 | 模型 | 原生支持 | 格式 |
 |------|----------|------|
-| GPT-4.1/GPT-4o | ✅ | OpenAI 标准 |
-| Claude | ✅ | Anthropic 标准 |
-| DeepSeek-V3 | ✅ | OpenAI 兼容 |
-| Qwen | ✅ | OpenAI 兼容 |
-| LLaMA | ⚠️ | 需通过 prompt 引导或微调 |
+| GPT-5/GPT-4.1 | ✅ | OpenAI 标准 |
+| Claude 4.x | ✅ | Anthropic 标准 |
+| DeepSeek-V3.2/R2 | ✅ | OpenAI 兼容 |
+| Qwen3 | ✅ | OpenAI 兼容 |
+| Llama 4 | ⚠️ | 需通过 prompt 引导或微调 |
 
 ### 3.4 Agent 框架对比
 
@@ -742,7 +742,7 @@ async def chat(request: ChatRequest):
 ### 6.4 多模态应用
 
 **Vision-Language 模型**：
-- GPT-4o、Claude 4、Qwen2.5-VL、LLaVA
+- GPT-5、Claude Opus 4.5、Gemini 3、Qwen3-VL、LLaVA
 - 场景：图片理解、图表分析、OCR+理解
 
 **架构**：

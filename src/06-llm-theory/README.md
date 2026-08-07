@@ -166,6 +166,8 @@ graph TB
 4. **Training language models to follow instructions** (InstructGPT, 2022) - RLHF
 5. **LLaMA: Open and Efficient Foundation Language Models** (2023) - 开源LLM
 6. **DeepSeek-R1** (2025) - 推理模型
+7. **GPT-5 / Gemini 3** (2025) - 新一代旗舰与统一推理
+8. **DeepSeek-V3.2 / R2** (2025-2026) - 稀疏注意力与新一代推理模型
 
 ---
 

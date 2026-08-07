@@ -350,8 +350,8 @@ Prompt 工程是迭代过程：
 
 ### 7.1 DeepSeek 系列
 
-**DeepSeek-V3（通用模型）**：
-- 支持 64K 上下文
+**DeepSeek-V3 / V3.2（通用模型）**：
+- 支持 128K 上下文（V3.2 引入稀疏注意力，推理成本更低）
 - Function Calling 能力强
 - 中文理解优秀
 
@@ -380,7 +380,7 @@ x₂ = (-3 - 7) / 4 = -2.5
 ### 7.2 Claude 系列
 
 - System Prompt 效果特别好，善用角色设定
-- 长上下文（200K）适合文档分析
+- 长上下文（200K 标准，1M beta）适合文档分析
 - 对 XML 标签格式的指令响应好
 
 ```xml
@@ -399,6 +399,7 @@ x₂ = (-3 - 7) / 4 = -2.5
 - Few-shot 效果突出
 - Function Calling 生态最成熟
 - Temperature 影响明显，创意任务用 0.7-1.0，精确任务用 0-0.3
+- GPT-5（2025.08 发布）支持 400K 上下文，推理与工具调用统一
 
 ---
 
@@ -531,7 +532,7 @@ log(version, response, user_feedback)
 5. **长文档如何处理？**
    - 分块处理 + Map-Reduce
    - 先摘要再分析
-   - 使用长上下文模型（Claude 200K, GPT-4 128K）
+   - 使用长上下文模型（Claude 4.x 1M、GPT-5 400K）
    - RAG 检索相关片段
 
 ---

@@ -184,7 +184,7 @@ PyTorch 版本必须与 CUDA 版本匹配。访问 [pytorch.org](https://pytorch
 # 确保在 llm-book 环境中
 conda activate llm-book
 
-# 安装 PyTorch 2.x + CUDA 12.1（当前最稳定组合）
+# 安装 PyTorch 2.x + 当前稳定 CUDA（以 pytorch.org 推荐为准）
 pip install torch torchvision torchaudio
 
 # 验证安装

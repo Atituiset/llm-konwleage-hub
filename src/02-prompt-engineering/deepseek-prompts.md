@@ -38,7 +38,7 @@ graph TB
 - **架构**：Mixture-of-Experts (MoE)，总参数 671B，每次激活 37B
 - **特点**：
   - 中文理解能力优秀
-  - 支持 64K 上下文
+  - 支持 128K 上下文
   - Function Calling 支持良好
   - API 价格极具竞争力（约为 GPT-4 的 1/10）
 

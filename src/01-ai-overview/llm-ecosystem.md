@@ -41,9 +41,9 @@ graph TB
 
 | 公司 | 旗舰模型 | 特点 | API 价格（每百万 token） |
 |------|----------|------|------------------------|
-| OpenAI | GPT-4.1 / o3 / o4-mini | 综合能力最强，生态完善 | $2 / $10-40 |
-| Anthropic | Claude 4 Sonnet / Opus | 编码能力强，上下文长 | $3 / $15 |
-| Google | Gemini 2.5 Pro / Flash | 多模态强，长上下文 2M | $1.25 / $10 |
+| OpenAI | GPT-5 / GPT-5.1 | 综合能力最强，生态完善 | $1.25 / $10 |
+| Anthropic | Claude Opus 4.5 / Sonnet 4.5 | 编码与 Agent 能力强，1M 上下文（beta） | $5 / $25 |
+| Google | Gemini 3 Pro / Flash | 多模态强，1M 上下文 | $2 / $12 |
 | 百度 | 文心 4.0 | 中文优化，国内合规 | 按量计费 |
 | 阿里 | 通义千问 Max | 开源+闭源双轨 | 按量计费 |
 | 字节 | 豆包 Pro | 中文对话，价格极低 | 极低 |
@@ -244,7 +244,7 @@ graph TD
     B -->|是| C[开源模型<br/>本地部署]
     B -->|否| D{预算充足?}
 
-    D -->|是| E[GPT-4.1/Claude 4<br/>最强性能]
+    D -->|是| E[GPT-5/Claude 4.5<br/>最强性能]
     D -->|否| F{需要中文?}
 
     F -->|是| G[DeepSeek/Qwen<br/>性价比最高]

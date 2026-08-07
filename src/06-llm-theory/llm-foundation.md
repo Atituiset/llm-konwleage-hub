@@ -747,7 +747,7 @@ Hello world →
 | **归一化** | Pre-LN | Pre-LN + 特定初始化 | Pre-RMSNorm | Pre-LN | Pre-RMSNorm |
 | **激活函数** | GELU (GPT-3) | SwiGLU (Claude 2+) | SwiGLU (LLaMA 2/3) | SwiGLU | SwiGLU |
 | **注意力变体** | 标准 MHA / 推测 GQA | GQA (Claude 3) | GQA (LLaMA 3) | MQA/GQA | MLA (Multi-head Latent Attention) |
-| **上下文长度** | GPT-3: 2K → GPT-4: 8K/32K → GPT-4o: 128K | Claude 2: 100K → Claude 3: 200K | LLaMA 2: 4K → LLaMA 3: 8K/128K | Gemini 1.5 Pro: 1M-10M token | DeepSeek-V2: 128K |
+| **上下文长度** | GPT-3: 2K → GPT-4: 8K/32K → GPT-4o: 128K → **GPT-5: 400K** | Claude 2: 100K → Claude 3: 200K → **Claude 4.x: 200K/1M (beta)** | LLaMA 2: 4K → LLaMA 3: 8K/128K → **Llama 4: 1M/10M** | Gemini 1.5 Pro: 1M-10M → **Gemini 3: 1M** | DeepSeek-V2: 128K → **DeepSeek-V3.2: 128K** |
 | **模型规模** | GPT-3: 175B<br>GPT-4: ~1.8T (推测) | Claude 3 Opus: ~? (未公开) | LLaMA 3: 8B/70B/405B | Gemini Ultra: 未公开 | DeepSeek-V3: 671B (37B 激活) |
 | **关键创新** | Scale 验证涌现<br>RLHF 普及 | Constitutional AI<br>Computer Use | 开源高性能基座<br>LLaMA 3 数据质量 | 原生多模态架构<br>TPU 训练优化 | MLA 显存优化<br>无辅助损失 MoE<br>FP8 训练 |
 

@@ -19,6 +19,9 @@ DeepSeek（深度求索）成立于 2023 年，是中国 AI 公司中技术开�
 | 2024.05 | DeepSeek-V2 | 236B (MoE) | MLA 注意力，成本极低 |
 | 2024.12 | DeepSeek-V3 | 671B (MoE) | 性能对标 GPT-4o |
 | 2025.01 | DeepSeek-R1 | 671B (MoE) | 推理能力对标 o1 |
+| 2025.08 | DeepSeek-V3.1 | 671B (MoE) | 128K 上下文、推理增强、开源权重 |
+| 2025.09 | DeepSeek-V3.2 | 685B (MoE) | DSA 稀疏注意力，长文本推理提速 2-3× |
+| 2026 | DeepSeek-R2 | 推理模型 | 新一代推理模型（API 上线） |
 
 ---
 

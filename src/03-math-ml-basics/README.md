@@ -1,6 +1,6 @@
 # 第三阶段：数学与机器学习基础
 
-> **资料来源**：综合《Foundation Mathematics for Computer Science》（Springer 2024）、Andrew Ng《Machine Learning》课程、Stanford ML Algorithms 讲义、《Understanding Machine Learning: From Theory to Algorithms》等教材与课程笔记，结合 LLM 领域实践整理。
+> **资料来源**：综合《Foundation Mathematics for Computer Science》（Springer 2023, 第 2 版）、Andrew Ng《Machine Learning》课程、Stanford ML Algorithms 讲义、《Understanding Machine Learning: From Theory to Algorithms》等教材与课程笔记，结合 LLM 领域实践整理。
 
 ---
 

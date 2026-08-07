@@ -1,6 +1,6 @@
 # 计算机科学数学基础：LLM 核心数学工具
 
-> **资料来源**：综合《Foundation Mathematics for Computer Science: A Visual Approach》(Springer 2024)、Goodfellow《深度学习》、以及 LLM 领域经典论文中的数学应用整理。
+> **资料来源**：综合《Foundation Mathematics for Computer Science: A Visual Approach》(Springer 2023, 第 2 版)、Goodfellow《深度学习》、以及 LLM 领域经典论文中的数学应用整理。
 
 ---
 
